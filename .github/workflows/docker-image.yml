@@ -25,7 +25,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Docker Build
       run: |
-        docker build -t javicandia/javicandia/docker-graphql:0.0.2 .
+        docker build -t javicandia/docker-graphql:0.0.2 .
     - name: Docker Push
       run: |
         docker push javicandia/docker-graphql:0.0.2
