@@ -26,9 +26,11 @@ jobs:
     - name: Docker Build
       run: |
         docker build -t javicandia/docker-graphql:0.0.2 .
+        docker build -t javicandia/docker-graphql:latest .
     - name: Docker Push
       run: |
         docker push javicandia/docker-graphql:0.0.2
+        docker push javicandia/docker-graphql:latest
       
     # - name: Build the Docker image
       # run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
